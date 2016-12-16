@@ -1,8 +1,8 @@
 # Usando Hadoop com Docker
 
-Este tutorial não abrange a instalação do Docker. Portanto, será assumido a sua intalação na máquina. 
+Este tutorial não abrange a instalação do Docker. Portanto, será assumido que o Docker já estaja instalado. 
 
-### Imagem docker
+### Imagem Docker
 
 O primeiro vamos instalar a imagem com o hadoop configurado na máquina
 ```shell 
@@ -63,9 +63,9 @@ def main():
 if __name__ == '__main__':
 	main()
 ```
-O redutor respeita as mesmas regras de entrada e saída do mapeador. O escopo de um reducer é estruturar dos dados que foram previamente mapeados. Nesse exemplo, todas as linhas que tem "CAFÉ" serão reduzidas em uma substring do caracter 10 ao 30. 
+O redutor respeita as mesmas regras de entrada e saída do mapeador. O escopo de um reducer é estruturar dos dados que foram previamente mapeados. Nesse exemplo todas as linhas que tem "CAFÉ" serão reduzidas em uma substring do caracter 10 ao 30. 
 
-Para testar o mapeador e o redutor em um fluxo de dados, basta usar o comando: 
+Para testar o mapeador e o redutor em um fluxo de dados basta usar o comando: 
 ```shell
 cat /home/allyson/log_servidor_padaria.TXT | python /home/allyson/mapper.py | python /home/allyson/reducer.py
 
