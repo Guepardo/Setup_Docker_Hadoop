@@ -88,8 +88,8 @@ HADOOP_PATH = os.environ['HADOOP_PREFIX'] + '/bin/'
 HADOOP_LIB  = os.environ['HADOOP_PREFIX'] + '/share/hadoop/tools/lib/'
 
 #path para o arquivo: 
-file_path   = '/k/data/vivo.TXT'
-file_name   = 'vivo.TXT'
+file_path   = '/k/data/Sample.TXT'
+file_name   = 'Sample.TXT'
 
 b = bash.Popen(['%(HADOOP_PATH)shadoop' % locals(),
 				'fs',
